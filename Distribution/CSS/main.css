@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    line-height: 1.5;
+    background: #181a1b;
+  }
+  
+  body .noscroll {
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .main-font {
+    font-family: "Alfa Slab One", "Poppins";
+    font-weight: 400;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .my-1 {
+    margin: 1rem 0;
+  }
+  
+  .mx-1 {
+    margin: 0 0.5rem;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 1.5rem 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .text-blue {
+    color: #3b82f6;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .text-grey {
+    color: grey;
+  }
+  
+  .text-dark-grey {
+    color: #2e3031;
+  }
+  
+  .bg-blue {
+    background-color: #3b82f6;
+  }
+  
+  .bg-dark-grey {
+    background-color: #2e3031;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .btn,
+  .btn-blue,
+  .btn-dark,
+  .btn-blue-outline {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-blue {
+    color: white;
+    background-color: #3b82f6;
+    border: 2px solid #3b82f6;
+  }
+  
+  .btn-dark {
+    color: white;
+    background-color: #181a1b;
+  }
+  
+  .btn-blue-outline {
+    color: #3b82f6;
+    background-color: transparent;
+    border: 2px solid #3b82f6;
+  }
+  
+  .btn-blue:hover {
+    transition: all 0.3s ease;
+    background: #0b63f3;
+    border: 2px solid #0b63f3;
+  }
+  
+  .btn-blue-outline:hover {
+    color: white;
+    background-color: #3b82f6;
+  }
+  
+  .btn-small {
+    padding: 0.5rem 1rem;
+  }
+  
+  #backToTopBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 0.5rem 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  
+  #backToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .section-subtext {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
