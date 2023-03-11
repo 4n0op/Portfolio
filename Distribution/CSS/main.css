@@ -698,3 +698,254 @@ header .seperator-skew svg .fill-white {
   display: flex;
   margin-bottom: 3rem;
 }
+
+.projects .project-row .project-left {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.projects .project-row .project-left img {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.projects .project-row .project-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects .project-row .project-right h3 {
+  font-size: 1.25rem;
+}
+
+.projects .project-row .project-right .tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.projects .project-row .project-right .tech-stack-list p {
+  margin-right: 1rem;
+}
+
+.projects .project-row .project-right .tech-stack-list li {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.projects .project-row .project-right .project-links {
+  margin-top: 1rem;
+}
+
+.projects .project-row #webscraper {
+  background-image: url("../img/top10songs.JPG");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.projects .project-row #webscraper:hover {
+  background-image: url("../img/top10songs.gif");
+}
+
+@media screen and (max-width: 860px) {
+  .projects .project-row {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+  .projects .project-row .project-left {
+    width: 100%;
+  }
+  .projects .project-row .project-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-left {
+    min-height: 200px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .project-left {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 859px) {
+  .project-left {
+    min-height: 350px;
+  }
+}
+
+/*
+
+PROJECTS END
+
+*/
+.skills1 {
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.skills1 .container {
+  max-width: 900px;
+}
+
+.skills1 .container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.skills1 .container .skills1-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.skills1 .container .skills1-card > *:last-child {
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  .skills1 .container .skills1-card {
+    padding: 20px;
+  }
+}
+
+.skills1 .container .skills1-card .skills1-card-column {
+  display: flex;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-image {
+  flex: 0 0 20%;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-image
+  img {
+  width: 100%;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-large {
+  flex: 0 0 80%;
+  padding-left: 1.5rem;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-large
+  > * {
+  margin: 0.25rem 0;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-large
+  h4 {
+  font-weight: normal;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-large
+  ul {
+  padding-left: 1.5rem;
+}
+
+.skills1
+  .container
+  .skills1-card
+  .skills1-card-column
+  .card-column-large
+  hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+/*
+
+EDUCATION
+
+*/
+
+.education {
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.education .container {
+  max-width: 900px;
+}
+
+.education .container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.education .container .education-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.education .container .education-card > *:last-child {
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  .education .container .education-card {
+    padding: 20px;
+  }
+}
+
+.education .container .education-card .education-card-column {
+  display: flex;
+}
+
+.education
+  .container
+  .education-card
+  .education-card-column
+  .card-column-image {
+  flex: 0 0 20%;
+}
+
+.education
+  .container
+  .education-card
+  .education-card-column
+  .card-column-image
+  img {
+  width: 100%;
+}
