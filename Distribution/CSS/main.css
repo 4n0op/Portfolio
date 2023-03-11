@@ -145,3 +145,158 @@ html {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
+
+.btn-email {
+    --primary: #3b82f6;
+    --primary-dark: #0455d8;
+    --primary-darkest: #013281;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --text: #fff;
+    --text-opacity: 1;
+    --success: #3b82f6;
+    --success-x: -12;
+    --success-stroke: 14;
+    --success-opacity: 0;
+    --border-radius: 3;
+    --overflow: hidden;
+    --x: 0;
+    --y: 0;
+    --rotate: 0;
+    --plane-x: 0;
+    --plane-y: 0;
+    --plane-opacity: 1;
+    --trails: rgba(59, 130, 246, 0.15);
+    --trails-stroke: 57;
+    --left-wing-background: var(--primary);
+    --left-wing-first-x: 0;
+    --left-wing-first-y: 0;
+    --left-wing-second-x: 50;
+    --left-wing-second-y: 0;
+    --left-wing-third-x: 0;
+    --left-wing-third-y: 100;
+    --left-body-background: var(--primary);
+    --left-body-first-x: 51;
+    --left-body-first-y: 0;
+    --left-body-second-x: 51;
+    --left-body-second-y: 100;
+    --left-body-third-x: 0;
+    --left-body-third-y: 100;
+    --right-wing-background: var(--primary);
+    --right-wing-first-x: 49;
+    --right-wing-first-y: 0;
+    --right-wing-second-x: 100;
+    --right-wing-second-y: 0;
+    --right-wing-third-x: 100;
+    --right-wing-third-y: 100;
+    --right-body-background: var(--primary);
+    --right-body-first-x: 49;
+    --right-body-first-y: 0;
+    --right-body-second-x: 49;
+    --right-body-second-y: 100;
+    --right-body-third-x: 100;
+    --right-body-third-y: 100;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    padding: 8px 0;
+    min-width: 100px;
+    text-align: center;
+    margin: 0;
+    line-height: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    background: none;
+    outline: none;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .btn-email .plane,
+  .btn-email .trails {
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .btn-email .plane {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    filter: drop-shadow(0 3px 6px var(--shadow));
+    transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px))
+      rotate(calc(var(--rotate) * 1deg)) translateZ(0);
+  }
+  
+  .btn-email .plane .left,
+  .btn-email .plane .right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: var(--plane-opacity);
+    transform: translate(calc(var(--plane-x) * 1px), calc(var(--plane-y) * 1px))
+      translateZ(0);
+  }
+  
+  .btn-email .plane .left:before,
+  .btn-email .plane .left:after,
+  .btn-email .plane .right:before,
+  .btn-email .plane .right:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: calc(var(--border-radius) * 1px);
+    transform: translate(var(--part-x, 0.4%), var(--part-y, 0)) translateZ(0);
+    z-index: var(--z-index, 2);
+    background: var(--background, var(--left-wing-background));
+    clip-path: polygon(
+      calc(var(--first-x, var(--left-wing-first-x)) * 1%)
+        calc(var(--first-y, var(--left-wing-first-y)) * 1%),
+      calc(var(--second-x, var(--left-wing-second-x)) * 1%)
+        calc(var(--second-y, var(--left-wing-second-y)) * 1%),
+      calc(var(--third-x, var(--left-wing-third-x)) * 1%)
+        calc(var(--third-y, var(--left-wing-third-y)) * 1%)
+    );
+  }
+  
+  .btn-email .plane .left:after {
+    --part-x: -1%;
+    --z-index: 1;
+    --background: var(--left-body-background);
+    --first-x: var(--left-body-first-x);
+    --first-y: var(--left-body-first-y);
+    --second-x: var(--left-body-second-x);
+    --second-y: var(--left-body-second-y);
+    --third-x: var(--left-body-third-x);
+    --third-y: var(--left-body-third-y);
+  }
+  
+  .btn-email .plane .right:before {
+    --part-x: -1%;
+    --z-index: 2;
+    --background: var(--right-wing-background);
+    --first-x: var(--right-wing-first-x);
+    --first-y: var(--right-wing-first-y);
+    --second-x: var(--right-wing-second-x);
+    --second-y: var(--right-wing-second-y);
+    --third-x: var(--right-wing-third-x);
+    --third-y: var(--right-wing-third-y);
+  }
+  
+  .btn-email .plane .right:after {
+    --part-x: 0;
+    --z-index: 1;
+    --background: var(--right-body-background);
+    --first-x: var(--right-body-first-x);
+    --first-y: var(--right-body-first-y);
+    --second-x: var(--right-body-second-x);
+    --second-y: var(--right-body-second-y);
+    --third-x: var(--right-body-third-x);
+    --third-y: var(--right-body-third-y);
+  }
