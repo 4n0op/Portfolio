@@ -1226,3 +1226,81 @@ EDUCATION
     pointer-events: none;
   }
 }
+
+.footer {
+  background: #181a1b;
+  padding: 1.5rem 0;
+  color: white;
+  position: relative;
+}
+
+.footer canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-flex #logo-footer {
+  width: 200px;
+}
+
+.footer .footer-flex .top-scroll-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer .footer-flex .top-scroll-button:hover {
+  color: #3b82f6;
+  border: 3px solid #3b82f6;
+}
+
+.footer .footer-flex .footer-icon-links a {
+  margin-left: 2rem;
+  transition: 0.3s;
+}
+
+.footer .footer-flex .footer-icon-links a:hover {
+  color: #3b82f6;
+}
+
+.footer .footer-flex .footer-icon-links a i {
+  transition: 0.3s;
+}
+
+.footer .footer-flex .footer-icon-links a i:hover {
+  transform: translateY(-20%);
+}
+
+@media screen and (max-width: 500px) {
+  .footer .footer-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-flex .top-scroll-button {
+    margin-top: 2rem;
+  }
+  .footer .footer-flex .footer-icon-links {
+    margin-top: 2rem;
+  }
+  .footer .footer-flex .footer-icon-links a {
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
