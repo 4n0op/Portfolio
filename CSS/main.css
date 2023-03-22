@@ -728,7 +728,7 @@ header .seperator-skew svg .fill-white {
 }
 
 .projects .project-row .project-right .tech-stack-list p {
-  /*margin-right: 1rem;*/
+  margin-right: 1rem;
 }
 
 .projects .project-row .project-right .tech-stack-list li {
