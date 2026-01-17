@@ -1,4 +1,4 @@
-.projects {
+.extracurriculars {
     background: white;
     padding: 3rem 0;
     h2 {
@@ -6,11 +6,11 @@
       margin-bottom: 3rem;
     }
   
-    .project-row {
+    .extracurriculars-row {
       display: flex;
       margin-bottom: 3rem;
   
-      .project-left {
+      .extracurriculars-left {
         width: 50%;
         margin-right: 2rem;
         img {
@@ -18,7 +18,7 @@
           border: 1px solid lightgray;
         }
       }
-      .project-right {
+      .extracurriculars-right {
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -44,7 +44,7 @@
           }
         }
   
-        .project-links {
+        .extracurriculars-links {
           margin-top: 1rem;
         }
       }
@@ -65,16 +65,16 @@
   }
   
   @media screen and (max-width: 860px) {
-    .projects {
-      .project-row {
+    .extracurriculars {
+      .extracurriculars-row {
         display: flex;
         margin-bottom: 3rem;
         flex-direction: column;
-        .project-left {
+        .extracurriculars-left {
           width: 100%;
           // max-height: 400px;
         }
-        .project-right {
+        .extracurriculars-right {
           width: 100%;
         }
       }
@@ -82,19 +82,19 @@
   }
   
   @media screen and (max-width: 500px) {
-    .project-left {
+    .extracurriculars-left {
       min-height: 200px;
     }
   }
   
   @media screen and (min-width: 501px) and (max-width: 700px) {
-    .project-left {
+    .extracurriculars-left {
       min-height: 300px;
     }
   }
   
   @media screen and (min-width: 701px) and (max-width: 859px) {
-    .project-left {
+    .extracurriculars-left {
       min-height: 350px;
     }
   }
